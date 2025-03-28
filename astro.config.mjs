@@ -6,6 +6,7 @@ import solidJs from "@astrojs/solid-js"
 
 // https://astro.build/config
 export default defineConfig({
+  host: "balajimalathi.com",
   site: "https://balajimalathi.com",
   vite: {
     server: {
