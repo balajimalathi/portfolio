@@ -3,7 +3,7 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro" 
-import { NOTES, PROJECTS } from "@consts"
+import { NOTES } from "@consts"
 import Notes from "@components/Notes"
 
 const projects = (await getCollection("notes"))
