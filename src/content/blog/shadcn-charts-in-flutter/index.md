@@ -284,26 +284,6 @@ flutter:
     - assets/chart/index.html
 ```
 
-<div className="flex flex-col md:flex-row gap-4 items-start justify-center my-6">
-  <div className="w-full md:w-1/2 overflow-hidden rounded shadow">
-    <img
-      src="/_static/shadcn-charts-in-flutter/snap.jpeg"
-      alt="Mobile Screenshot"
-      className="h-full w-full object-cover"
-    />
-  </div>
-
-  <div className="w-full md:w-1/2 overflow-hidden rounded shadow">
-    <video
-      src="/_static/shadcn-charts-in-flutter/demo.mp4"
-      controls
-      className="h-full w-full object-cover"
-    />
-  </div>
-</div>
-
----
-
 ## 🚀 Load HTML in Flutter
 
 ```dart
@@ -323,6 +303,25 @@ InAppWebView(
 ```
 
 🎉 Now your Flutter app is running a full shadcn + Tailwind chart, with dynamic data injection.
+
+---
+<div className="flex flex-col md:flex-row gap-4 items-start justify-center my-6">
+  <div className="w-full md:w-1/2 overflow-hidden rounded shadow">
+    <img
+      src="/_static/shadcn-charts-in-flutter/snap.jpeg"
+      alt="Mobile Screenshot"
+      className="h-full w-full object-cover"
+    />
+  </div>
+
+  <div className="w-full md:w-1/2 overflow-hidden rounded shadow">
+    <video
+      src="/_static/shadcn-charts-in-flutter/demo.mp4"
+      controls
+      className="h-full w-full object-cover"
+    />
+  </div>
+</div>
 
 ---
 
