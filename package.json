@@ -20,6 +20,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/solid-js": "^5.0.4",
     "@astrojs/tailwind": "^6.0.0",
+    "@kbyte-tech/astro-clarity": "^0.0.8",
     "@tailwindcss/typography": "^0.5.10",
     "astro": "^5.2.5",
     "clsx": "^2.1.0",

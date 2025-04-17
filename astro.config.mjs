@@ -3,6 +3,7 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import solidJs from "@astrojs/solid-js"
+import clarity from '@kbyte-tech/astro-clarity';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,5 +17,14 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   },
-  integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
+  integrations: [
+    mdx(),
+    sitemap(),
+    solidJs(),
+    tailwind({ applyBaseStyles: false }),
+    clarity({
+      enabled: true,
+      projectId: 'r5m7cc1072',
+    }),
+  ],
 })
