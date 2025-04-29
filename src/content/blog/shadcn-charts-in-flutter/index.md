@@ -374,6 +374,4 @@ initialFile: "assets/charts/${widget.chartType}.html"
 
 ---
 
-Let me know if you'd like a public GitHub template — happy to open source the setup.
-
-🔗 **#flutter #react #vite #shadcn #webview #engineering #charts #opensource**
+Github 👉 ![shad-chart-template](https://github.com/balajimalathi/shad-chart-template.git)
