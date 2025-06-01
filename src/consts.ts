@@ -42,13 +42,13 @@ export const LINKS: Links = [
     HREF: "/work", 
   },
   { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-  },
-  { 
     TEXT: "Projects", 
     HREF: "/projects", 
   },
+  { 
+    TEXT: "Blog", 
+    HREF: "/blog", 
+  }
 ]
 
 // Socials
@@ -56,8 +56,8 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "balaj.mailbox@gmail.com",
-    HREF: "mailto:balaj.mailbox@gmail.com",
+    TEXT: "balaji.m@skndan.com",
+    HREF: "mailto:balaji.m@skndan.com",
   },
   { 
     NAME: "Github",
@@ -68,7 +68,7 @@ export const SOCIALS: Socials = [
   { 
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "indrajith malathi",
+    TEXT: "balajimalathi",
     HREF: "https://www.linkedin.com/in/balaji-mala",
   },
   { 
