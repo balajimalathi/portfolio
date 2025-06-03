@@ -374,4 +374,4 @@ initialFile: "assets/charts/${widget.chartType}.html"
 
 ---
 
-Github 👉 ![shad-chart-template](https://github.com/balajimalathi/shad-chart-template.git)
+Github 👉 [shad-chart-template](https://github.com/balajimalathi/shad-chart-template.git)
