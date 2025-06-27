@@ -1,11 +1,11 @@
 {
-  "name": "astro-sphere",
+  "name": "portfolio",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
-    "start": "astro dev --port 9000",
+    "start": "astro preview --host 0.0.0.0 --port 9000",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "preview:network": "astro dev --host",

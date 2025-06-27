@@ -39,5 +39,5 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            /root/.nvm/versions/node/v20.12.2/bin/pm2 reload balajimalathi || /root/.nvm/versions/node/v20.12.2/bin/pm2 start npm --name "balajimalathi" -- start
+            /root/.nvm/versions/node/v20.12.2/bin/pm2 reload balajimalathi || /root/.nvm/versions/node/v20.12.2/bin/pm2 --name "balajimalathi" serve ./dist/ 9000
             /root/.nvm/versions/node/v20.12.2/bin/pm2 save

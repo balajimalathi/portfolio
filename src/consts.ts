@@ -25,6 +25,11 @@ export const PROJECTS: Page = {
   DESCRIPTION: "Recent projects I have worked on.",
 }
 
+export const NOTES: Page = {
+  TITLE: "Notes",
+  DESCRIPTION: "Recent projects I have worked on.",
+}
+
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
