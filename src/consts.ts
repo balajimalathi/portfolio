@@ -70,17 +70,17 @@ export const SOCIALS: Socials = [
     TEXT: "balajimalathi",
     HREF: "https://github.com/balajimalathi"
   },
-  { 
-    NAME: "LinkedIn",
-    ICON: "linkedin",
-    TEXT: "balajimalathi",
-    HREF: "https://www.linkedin.com/in/balaji-mala",
-  },
+  // { 
+  //   NAME: "LinkedIn",
+  //   ICON: "linkedin",
+  //   TEXT: "balajimalathi",
+  //   HREF: "https://www.linkedin.com/in/balaji-mala",
+  // },
   { 
     NAME: "Twitter",
     ICON: "twitter-x",
     TEXT: "balajimalathi_",
-    HREF: "https://twitter.com/balajimalathi_",
+    HREF: "https://x.com/balajimalathi_",
   },
 ]
 
