@@ -5,7 +5,7 @@ export default defineConfig({
     allowedHosts: ['balajimalathi.com'], // For dev server
   },
   preview: {
-    port: 9000, // Optional: Explicitly set port (if needed)
+    port: 9001, // Optional: Explicitly set port (if needed)
     host: true, // Allow external access
     allowedHosts: ['balajimalathi.com'], // Required for preview
   },
