@@ -7,8 +7,8 @@ import clarity from '@kbyte-tech/astro-clarity';
 
 // https://astro.build/config
 export default defineConfig({
-  host: "balajimalathi.com",
-  site: "https://balajimalathi.com",
+  host: "skndan.com",
+  site: "https://skndan.com",
   vite: {
     server: {
       allowedHosts: true,
