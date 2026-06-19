@@ -1,6 +1,6 @@
 ---
 title: "Neomaxer"
-summary: "Retail Management Suite"
+summary: "5-channel omni-commerce platform — Flutter, Spring Boot, and Angular"
 date: "Jun 17 2022"
 draft: false
 tags:
@@ -12,6 +12,8 @@ tags:
 - Tailwind
 demoUrl: "https://neomaxer.com"
 ---
+
+Built and launched Neomaxer as a 5-channel omni-commerce platform, collaborating with backend and web teams for seamless cross-service integration.
 
 The Neomaxer Retail Management Suite is a comprehensive set of tools designed to empower businesses with seamless retail operations, efficient sales management, and enhanced customer experiences. The suite includes four core applications: Neomaxer Store, Neomaxer Sell, Neomaxer POS, and Neomaxer Buy. Each application is tailored to address specific retail needs, from point-of-sale (POS) management to inventory tracking, customer management, and online shopping. Built using a robust tech stack, including Angular, Flutter, Electron, Spring Boot, and Next.js, the suite offers cross-platform compatibility and scalability.
 

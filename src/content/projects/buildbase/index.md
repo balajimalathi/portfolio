@@ -13,7 +13,7 @@ tags:
 demoUrl: "https://play.google.com/store/apps/details?id=au.com.buildbase"
 ---
 
-Buildbase is a robust and scalable construction management solution designed specifically for Virtue Homes, Traralgon, AU. This system streamlines every aspect of construction projects, from planning and specifications to on-site execution and compliance tracking. Built with a modern tech stack, Buildbase integrates project planning, document management, job tracking, team coordination, and compliance monitoring into a single, easy-to-use platform.
+Buildbase is a robust and scalable construction management solution designed specifically for Virtue Homes, Traralgon, AU. The rollout supported 100+ active admin users and 300+ vendors, streamlining every aspect of construction projects from planning and specifications to on-site execution and compliance tracking. Built with a modern tech stack, Buildbase integrates project planning, document management, job tracking, team coordination, and compliance monitoring into a single, easy-to-use platform.
 
 This project represents the most complex and extensive system you have developed, combining multiple modules to handle the entire lifecycle of construction projects efficiently. It provides real-time insights, centralized data access, and workflow automation to improve productivity and decision-making.
 

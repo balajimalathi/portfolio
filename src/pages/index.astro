@@ -4,6 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
 import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
+import { buildSkillCategories } from "@lib/skillBadges"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
@@ -17,28 +18,12 @@ const projects = (await getCollection("projects"))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,3)
 
-const stack = [
-  { 
-    text: "Astro", 
-    icon: "astro", 
-    href: "https://astro.build" 
-  },
-  { 
-    text: "Javascript", 
-    icon: "javascript", 
-    href: "https://www.javascript.com" 
-  },
-  { 
-    text: "Typescript", 
-    icon: "typescript", 
-    href: "https://www.typescriptlang.org" 
-  },
-  { 
-    text: "Tailwind", 
-    icon: "tailwind", 
-    href: "https://tailwindcss.com" 
-  },
-]
+const allProjects = await getCollection("projects")
+const projectTags = allProjects
+  .filter((project) => !project.data.draft)
+  .flatMap((project) => project.data.tags)
+
+const skillCategories = buildSkillCategories(projectTags)
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
@@ -86,7 +71,7 @@ const stack = [
             Balaji Malathi
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for sapiens.
+            Flutter Developer · 6+ years building cross-platform apps
           </p>
           <div class="flex flex-row items-center gap-2 justify-center py-4">
             <span class="relative flex h-3 w-3">
@@ -114,39 +99,57 @@ const stack = [
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>product builder</i></b>, <b><i>UI/UX designer</i></b>, <b><i>mentor</i></b>, and <b><i>tech enthusiast</i></b> with a passion for crafting seamless digital experiences.</p>
-          
-          <p>I thrive on solving complex problems, designing intuitive interfaces, and developing scalable applications. I love turning ideas into <b>fully functional products</b>—whether it's building <b>secure banking solutions</b>, <b><a href="https://neomaxer.com"
+          <p>I am an experienced <b><i>Flutter Developer</i></b> with over 6 years of expertise crafting high-performance, cross-platform mobile applications. My skills span Dart, RESTful API integration, Firebase, and scalable app architecture.</p>
+
+          <p>I excel at leading development teams, optimizing performance, and delivering user-centric solutions — from <b><a href="https://neomaxer.com"
             target="_blank"
             rel="noopener noreferrer"
             class="text-blue-500 font-bold hover:underline"
-        >omni-commerce platforms</a></b>, <b><a href="https://neomaxer.com/store"
-            target="_blank"
-            rel="noopener noreferrer"
+        >omni-commerce platforms</a></b> and <b><a href="/projects/fedcorp"
             class="text-blue-500 font-bold hover:underline"
-        >inventory software</a></b>, or migrating <a href="https://medium.com/@mr.rabbitt/how-i-migrated-mobile-app-from-cordova-to-flutter-dd3165c0c3c3"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-blue-500 font-bold hover:underline"
-    >legacy systems to modern tech stacks</a>.</p>
-          
-          <p>During my career</p>
-          
-          <p>My work spans across industries, from <b><a href="https://doneo.cards/"
-            target="_blank"
-            rel="noopener noreferrer"
+        >banking apps</a></b> to <b><a href="/projects/buildbase"
             class="text-blue-500 font-bold hover:underline"
-        >finance</a> and 
-            <a href="https://buildbase.com.au/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-500 font-bold hover:underline"
-            >construction</a></b> to <b>CRM and community apps</b>, always with a focus on <b>efficiency, security, and user experience</b>. I have led end-to-end product rollouts, guided teams, and delivered solutions that scale.</p>
-          
-          <p>Now</p>
-          
-          <p>I am dedicated to building and optimizing innovative products, mentoring teams, and continuously exploring new technologies to push the boundaries of software development.</p>
+        >construction CRM</a></b> and <b>solo-founder SaaS products</b>.</p>
+
+          <p>At <b>Splenta Systems</b>, I built Neomaxer, owned ABCD finance modules, integrated UPI into Fedcorp, and led Flutter training for 10 developers. At <b>Techeva</b>, I launched Buildbase and Puppy CRM.</p>
+
+          <p>At <b>Joy Infotech</b>, I contribute to Equitas credit card products and ship production SaaS — <b><a href="/projects/chat2base"
+            class="text-blue-500 font-bold hover:underline"
+        >Chat2Base</a></b>, <b><a href="/projects/repovox"
+            class="text-blue-500 font-bold hover:underline"
+        >RepoVox</a></b>, <b><a href="/projects/dabcards"
+            class="text-blue-500 font-bold hover:underline"
+        >DABCards</a></b>, and <b><a href="/projects/exclusivz"
+            class="text-blue-500 font-bold hover:underline"
+        >Exclusivz</a></b> — alongside AI tooling and RAG pipelines.</p>
+
+          <p><b>Education:</b> BCA (2015–2018) and M.Sc IT (2018–2020) from St. Joseph's College, Cuddalore.</p>
         </article>
+      </section>
+ 
+      <!-- Skills Section -->
+      <section class="animate">
+        <div class="space-y-6">
+          <p class="font-semibold text-black dark:text-white">
+            Skills
+          </p>
+          {skillCategories.map((category) => (
+            <div class="space-y-3">
+              <p class="text-sm font-medium text-black/60 dark:text-white/60 uppercase tracking-wide">
+                {category.title}
+              </p>
+              <div class="flex flex-wrap items-center gap-2">
+                {category.badges.map((item) => (
+                  <StackCard
+                    href={item.href}
+                    badge={item.badge}
+                    alt={item.alt}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <!-- Blog Preview Section -->
@@ -170,33 +173,7 @@ const stack = [
             ))}
           </ul>
         </div>
-      </section>
-
-      <!-- Tech Stack Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">
-            Website build with
-          </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {stack.map(item => (
-              <StackCard 
-                text={item.text}
-                icon={item.icon}
-                href={item.href}
-              />
-            ))}
-          </div>
-          <div>
-            Performing reactivity and statefulness, special guest
-            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                SolidJS
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
+      </section> 
 
       <!-- Project Preview Section -->
       <section class="animate">

@@ -1,6 +1,6 @@
 ---
 title: "RepoVox"
-summary: "AI-powered code summarization and review assistant with social publishing support"
+summary: "AI-powered code summarization SaaS — solo-founder product with social publishing"
 date: "Apr 14 2025"
 draft: false
 tags:
@@ -10,6 +10,8 @@ tags:
   - OpenRouter
   - NextAuth
   - GitHub API
+  - LangChain
+  - SaaS
 demoUrl: "https://repovox.com"
 ---
 

@@ -60,57 +60,5 @@ export const apps: AppConfig[] = [
         icon: "🔒",
       },
     ],
-  },
-  {
-    slug: "keel",
-    name: "Keel",
-    tagline: "Your Backend, Instantly",
-    description:
-      "Keel is a self-hosted backend-as-a-service. Create databases, manage auth, and deploy functions — all from a beautiful dashboard.",
-    keywords: "backend, baas, database, api, self-hosted, postgres, auth",
-    category: "DeveloperApplication",
-    os: "Web, iOS, Android",
-    price: "0",
-    status: "Now Available",
-    emoji: "⚓",
-    downloadUrl: "https://keel.skndan.com",
-    theme: {
-      color: "#6366f1",
-      primary: "#6366f1",
-      primaryLight: "#eef2ff",
-      primaryDark: "#4338ca",
-      accent: "#f472b6",
-    },
-    screenshots: [
-      { label: "Dashboard", alt: "Keel dashboard overview" },
-      { label: "Database Browser", alt: "Keel database table browser" },
-      { label: "Auth Settings", alt: "Keel authentication configuration" },
-    ],
-    features: [
-      {
-        name: "Database Manager",
-        description:
-          "Create and manage PostgreSQL tables with a visual table browser. No SQL required.",
-        icon: "🗄️",
-      },
-      {
-        name: "Built-in Auth",
-        description:
-          "Keycloak-powered authentication with JWT, social login, and role-based access control.",
-        icon: "🔐",
-      },
-      {
-        name: "File Storage",
-        description:
-          "RustFS-powered object storage with presigned URLs and bucket management.",
-        icon: "📦",
-      },
-      {
-        name: "Realtime Events",
-        description:
-          "WebSocket-based realtime subscriptions. Get live updates when your data changes.",
-        icon: "⚡",
-      },
-    ],
-  },
+  }
 ];
