@@ -3,7 +3,8 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "Balaji Malathi",
-  DESCRIPTION: "Welcome to my dev portfolio and blog",
+  DESCRIPTION:
+    "Flutter Developer with 6+ years building high-performance cross-platform apps, fintech solutions, and SaaS products.",
   AUTHOR: "Balaji Malathi",
 }
 
@@ -60,6 +61,12 @@ export const LINKS: Links = [
 export const SOCIALS: Socials = [
   { 
     NAME: "Email",
+    ICON: "email", 
+    TEXT: "balaji.mailbox@gmail.com",
+    HREF: "mailto:balaji.mailbox@gmail.com",
+  },
+  { 
+    NAME: "Work Email",
     ICON: "email", 
     TEXT: "balaji.m@skndan.com",
     HREF: "mailto:balaji.m@skndan.com",
