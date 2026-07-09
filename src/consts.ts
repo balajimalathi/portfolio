@@ -2,28 +2,28 @@ import type { Site, Page, Links, Socials } from "@types"
 
 // Global
 export const SITE: Site = {
-  TITLE: "Balaji Malathi",
+  TITLE: "Skndan",
   DESCRIPTION:
-    "Flutter Developer with 6+ years building high-performance cross-platform apps, fintech solutions, and SaaS products.",
+    "Flutter Developer with 6+ years building high-performance cross-platform apps, fintech solutions, and SaaS products. Portfolio and blog of Balaji Malathi.",
   AUTHOR: "Balaji Malathi",
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+  TITLE: "Work Experience",
+  DESCRIPTION: "Places I have worked — Splenta Systems, Techeva, Joy Infotech, and freelance projects.",
 }
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
+  DESCRIPTION: "Flutter development, SaaS building, fintech, and indie hacking — technical guides and insights by Balaji Malathi.",
 }
 
 // Projects Page 
 export const PROJECTS: Page = {
   TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  DESCRIPTION: "Recent projects I have worked on — Flutter apps, SaaS products, fintech solutions, and open-source tools.",
 }
 
 export const NOTES: Page = {
@@ -34,7 +34,7 @@ export const NOTES: Page = {
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
+  DESCRIPTION: "Search all posts and projects by keyword — blog posts, projects, and work experience on Skndan.",
 }
 
 // Links

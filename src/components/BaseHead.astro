@@ -42,6 +42,35 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<!-- Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Balaji Malathi",
+      "url": "https://skndan.com",
+      "image": "https://skndan.com/open-graph.jpg",
+      "jobTitle": "Flutter Developer",
+      "description": "Flutter Developer with 6+ years building high-performance cross-platform apps, fintech solutions, and SaaS products.",
+      "sameAs": [
+        "https://github.com/balajimalathi",
+        "https://x.com/balajimalathi_"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Skndan",
+      "url": "https://skndan.com",
+      "description": "Portfolio and blog of Balaji Malathi — Flutter developer, indie hacker, and SaaS builder.",
+      "founder": {
+        "@type": "Person",
+        "name": "Balaji Malathi"
+      }
+    }
+  ]
+})} />
+
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap-index.xml" />
 
