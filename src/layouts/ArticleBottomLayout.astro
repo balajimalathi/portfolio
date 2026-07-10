@@ -2,10 +2,7 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 
 type Props = {
-  entry:
-    | CollectionEntry<"blog">
-    | CollectionEntry<"projects">
-    | CollectionEntry<"notes">;
+  entry: CollectionEntry<"blog"> | CollectionEntry<"projects">;
 };
 
 // Get the requested entry

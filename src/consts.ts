@@ -26,11 +26,6 @@ export const PROJECTS: Page = {
   DESCRIPTION: "Recent projects I have worked on — Flutter apps, SaaS products, fintech solutions, and open-source tools.",
 }
 
-export const NOTES: Page = {
-  TITLE: "Notes",
-  DESCRIPTION: "Recent projects I have worked on.",
-}
-
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
@@ -39,39 +34,39 @@ export const SEARCH: Page = {
 
 // Links
 export const LINKS: Links = [
-  { 
-    TEXT: "Home", 
-    HREF: "/", 
+  {
+    TEXT: "Home",
+    HREF: "/",
   },
-  { 
-    TEXT: "Work", 
-    HREF: "/work", 
+  {
+    TEXT: "Work",
+    HREF: "/work",
   },
-  { 
-    TEXT: "Projects", 
-    HREF: "/projects", 
+  {
+    TEXT: "Projects",
+    HREF: "/projects",
   },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
+  {
+    TEXT: "Blog",
+    HREF: "/blog",
   }
 ]
 
 // Socials
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "Email",
-    ICON: "email", 
+    ICON: "email",
     TEXT: "balaji.mailbox@gmail.com",
     HREF: "mailto:balaji.mailbox@gmail.com",
   },
-  { 
+  {
     NAME: "Work Email",
-    ICON: "email", 
+    ICON: "email",
     TEXT: "balaji.m@skndan.com",
     HREF: "mailto:balaji.m@skndan.com",
   },
-  { 
+  {
     NAME: "Github",
     ICON: "github",
     TEXT: "balajimalathi",
@@ -83,11 +78,11 @@ export const SOCIALS: Socials = [
   //   TEXT: "balajimalathi",
   //   HREF: "https://www.linkedin.com/in/balaji-mala",
   // },
-  { 
+  {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "balajimalathi_",
-    HREF: "https://x.com/balajimalathi_",
+    TEXT: "skndann",
+    HREF: "https://x.com/skndann",
   },
 ]
 

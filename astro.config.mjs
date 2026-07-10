@@ -4,9 +4,17 @@ import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import solidJs from "@astrojs/solid-js"
 import clarity from '@kbyte-tech/astro-clarity';
+import rehypeMermaid from "rehype-mermaid"
 
 // https://astro.build/config
 export default defineConfig({
+  markdown: {
+    syntaxHighlight: {
+      type: "shiki",
+      excludeLangs: ["mermaid"],
+    },
+    rehypePlugins: [rehypeMermaid],
+  },
   host: "skndan.com",
   site: "https://skndan.com",
   vite: {
